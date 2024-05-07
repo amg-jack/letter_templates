@@ -77,6 +77,10 @@ tbody, td, tfoot, th, thead, tr {
   color: #dc3545 !important
 }
 
+.font-size-8 {
+  font-size: 8pt;
+}
+
 .footer {
     position : relative;
     bottom : 20px;
