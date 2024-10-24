@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v1.0</title>
+    <link rel="stylesheet" href="../letter_css/style.css">
+
+    <style>
+        #invoice_table > thead > tr > th {
+            border-bottom: 2px solid #d8d8d8 !important;
+        }
+        #invoice_table {
+            border-collapse: collapse;
+        }
+        #invoice_details>:not(caption)>*>* {
+            padding: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+
+        <table class="table table-sm" style="margin: 0;">
+            <tbody>
+                <tr>
+                    <td align="center" valign="top">
+                        <img id="logo" src="">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <div id="address">
+                            [Office Address]
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="bg-amg-1" style="font-size: 14pt; font-weight: bold; padding: 5px;">[TITLE]</div>
+
+        <br>
+
+        <table id="invoice_details" class="table font-size-8" style="padding: 0px !important;">
+            <tbody>
+                <tr>
+                    <th width="20%">To:</th>
+                    <td width="35%" style="white-space: pre-line;">[Raise Invoice To]
+                        [Address1]
+                        [Address2]
+                        [Address3]
+                    </td>
+                    
+                    <th width="20%">[for]:</th>
+                    <td width="35%">[Client Name]</td>
+                </tr>
+                <tr>
+                    <th width="20%">Invoice Number:</th>
+                    <td width="35%">[INVOICE NUMBER]</td>
+
+                    <th width="15%">Invoice Date:</th>
+                    <td width="35%">[DateToday]</td>
+                </tr>
+                <tr>
+                    <th width="20%">AMG Ref:</th>
+                    <td width="35%">[AMG Ref]</td>
+
+                    <th width="20%">[BORTITLE]:</th>
+                    <td width="35%">[Borrower] [/Borrower 2]</td>
+                </tr>
+                <tr>
+                    <th width="20%">Address:</th>
+                    <td width="35%">[Addr 1] <br> [Addr 2]</td>
+
+                    <th width="20%">[REFACC]:</th>
+                    <td width="35%">[Client Ref]</td>
+                </tr>
+                <tr>
+                    <th width="20%">Exchange Date:</th>
+                    <td width="35%">[Exchange Date]</td>
+
+                    <th width="20%">Completion Date:</th>
+                    <td width="35%">[Completion Date]</td>
+                </tr>
+                <tr>
+                    <th width="20%">Sale Price:</th>
+                    <td width="35%">[SalePrice]</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+        <br>
+
+        <table id="invoice_table" class="table table-striped font-size-8" >
+            <thead>
+                <tr>
+                    <th width="20%">Supplier</th>
+                    <th width="40%">Cost Type</th>
+                    <th width="10%">Net</th>
+                    <th width="10%">VAT @</th>
+                    <th>VAT</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>AMG Maintenance</td>
+                    <td>Possession (IRV) Job</td>
+                    <td>225.00</td>
+                    <td>20.0%</td>
+                    <td>45.00</td>
+                    <td>270.00</td>
+                </tr>
+                <tr>
+                    <td>AMG Maintenance</td>
+                    <td>To attend to complete a Clean and STACK externally and internally all remaining chattels </td>
+                    <td>1225.00</td>
+                    <td>20.0%</td>
+                    <td>45.00</td>
+                    <td>1270.00</td>
+                </tr>
+                <tr>
+                    <td>AMG Maintenance</td>
+                    <td>Possession (IRV) Job</td>
+                    <td>225.00</td>
+                    <td>20.0%</td>
+                    <td>45.00</td>
+                    <td>270.00</td>
+                </tr>
+                <tr>
+                    <td>AMG Maintenance</td>
+                    <td>Possession (IRV) Job</td>
+                    <td>225.00</td>
+                    <td>20.0%</td>
+                    <td>45.00</td>
+                    <td>270.00</td>
+                </tr>
+
+                <tr>
+                    <td>AMG Maintenance</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla hic et saepe quaerat, aspernatur cumque. Amet officiis veritatis saepe iure.</td>
+                    <td>225.00</td>
+                    <td>20.0%</td>
+                    <td>45.00</td>
+                    <td>270.00</td>
+                </tr>
+
+                <tr style="background-color: white; border-top: 2px solid #d8d8d8;">
+                    <td colspan="2" class="text-end fw-bold">TOTAL:</td>
+                    <td>[Total Net]</td>
+                    <td>[Vat %]</td>
+                    <td>[Total VAT]</td>
+                    <td>[Total]</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+        
+        <p style="white-space: pre-line; text-align: center; font-weight: bold; font-size: 9pt;">
+            BACS payments to: 
+            The Asset Management Group Ltd 
+            Sort Code: 20 36 08 
+            Account Number: 10088587 
+            Barclays Bank 
+            <span style="color: red;">Please quote our invoice number as the payment reference </span>
+            <span style="color: red;">Please email remittance advice to accounts@amgltd.co.uk </span>
+            Please make cheques payable to THE ASSET MANAGEMENT GROUP LTD. 
+
+            VAT NO. 500 2481 05
+        </p>
+
+    </div>
+
+</body>
+
+</html>
